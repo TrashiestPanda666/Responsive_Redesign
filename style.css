@@ -1,0 +1,278 @@
+
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;    
+}
+
+.navBar{
+    margin:auto;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Logo img{
+    flex: 1;
+    padding-left: 2.5vw;
+    width: 30%;
+    height: auto;
+}
+
+#navTabs {
+    flex: 3;
+    display: flex;
+    justify-content:end;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding-left: 0.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link {
+    height: 80%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8vw;
+    font-weight: bold;
+    transition: color 0.2s;
+    /* border-right: 2px solid black; */
+}
+
+.link:hover{
+    background-color: #242847;
+}
+
+.link:hover a{
+    color:whitesmoke;
+}
+
+.separator {
+    width: 2px;
+    height: 50%;
+    background: black;
+    align-items: stretch;
+}
+
+.Horizontal_Separator{
+    height: 4px;
+    background: black;
+}
+
+.Header{
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bolder;
+    font-size: x-large;
+    padding: 2%;
+    height: 65%;
+    background-image: url('Resources/wallpaperflare.com_wallpaper_dimmed.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    /* background-position: left; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quote{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6vw;
+    font-weight: lighter;
+    position:relative;
+    width: 30%;
+    text-align: right;
+    left: 65%;
+    top: 35%;
+}
+
+.Section {
+    padding: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: gray; */
+}
+
+.Section h3{
+    width: 180px;
+    font-size: x-large;
+    border-bottom: 3px solid black;
+}
+
+#header-and-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-container{
+    display: flex;
+    align-items: center;
+    background-color: rgba(239, 233, 233, 0.973);
+    border-radius: 50px;
+    height: 35px;
+    width: 500px;
+}
+
+#search-container input{
+    font-family:'Courier New', Courier, monospace;
+    border: 1px solid grey;
+    border-radius: 50px;
+    height: 20px;
+    width: 75%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid-planes{
+    height: 110vh;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr 2px 1fr 2px 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.grid-engines{
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr 2px 1fr 2px 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.grid-item .main-image {
+    box-shadow: 0px 10px 20px black;
+    width: 320px;
+    height: 214px;
+    margin-top: 10px;
+}
+
+.arrow-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:30px;
+}
+
+.arrow-container img{
+    width: 25px;
+    height: 25px;
+}
+
+.grid-item{
+    text-align: center;
+    place-items: center;
+    width: 90%;
+    height: 90%;
+    transition: background-color 0.3s;
+    transition: transform 0.2s;
+    /* box-shadow: 0px 10px 20px black; */
+}
+
+.grid-item:hover{
+    /* background-color: #1c1c1e27; */
+    /* box-shadow: 5px 5px 20px black; */
+    border-radius: 15px;
+    transform: scale(1.03);
+}
+
+.grid-item .image-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin: 10px;
+}
+
+.grid-item .image-caption{
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.vertical-separator{
+    height: 90%;
+    width: 2px;
+    background: black;
+}
+
+.footer {
+    height: 80px;
+    background: #242847;
+    display: flex;
+    justify-content: end;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    .link a{
+        font-size: 2.2vw;
+    }
+    #quote{
+        font-size: 2.5vw;
+        top: 25%;
+    }
+    .grid-planes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: fit-content;
+    }
+    .grid-engines{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: fit-content;
+    }
+    .grid-planes .main-image{
+        width: 250px;
+        height: 167px;
+    }
+    .vertical-separator{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .grid-item{
+        transform: scale(0.9);
+    }
+    .grid-item .main-image{
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #Logo {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+}
+
